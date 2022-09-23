@@ -33,10 +33,12 @@ body{
     background-size: cover;
     background-position: center;
 }
+
 .layers__base{
-    transform: translate3d(0, calcvar((--scrollTop)/2),0);
+    transform: translate3d(0,calc(var(--scrollTop)/3),0);
 }
 
 .main-article{
     height: 100vh;
+    ;
 }
