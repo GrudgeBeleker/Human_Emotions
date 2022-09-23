@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 body{
     background-color: black;
     color: #fff;
@@ -34,11 +32,30 @@ body{
     background-position: center;
 }
 
-.layers__base{
-    transform: translate3d(0,calc(var(--scrollTop)/3),0);
+
+.layers__middle{
+    transform: translate3d(0,calc(var(--scrollTop)/8),0);
+}
+.layers__second_middle{
+    transform: translate3d(0, calc(var(--scrollTop)/16),0);
+}
+.layers__second_top{
+    transform: translate3d(0, calc(var(--scrollTop)/16),0);
 }
 
 .main-article{
     height: 100vh;
-    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.main-article-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
 }
